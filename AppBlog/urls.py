@@ -1,5 +1,5 @@
 from django.urls import path
-from AppBlog.views import PostCreate, PostDelete, PostDetail, PostList, PostUpdate, inicio, login_request, post, register_request, resultadosBusqueda, usuario, about, nuevoPostForm
+from AppBlog.views import PostCreate, PostDelete, PostDetail, PostList, PostUpdate, contact, inicio, login_request, post, register_request, resultadosBusqueda, usuario, about, nuevoPostForm
 from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
@@ -9,7 +9,8 @@ urlpatterns = [
     path('about/', about, name='About'),
     path('nuevoPostForm/', nuevoPostForm, name='nuevoPostForm'),
     path('resultadosBusqueda/', resultadosBusqueda, name='resultadosBusqueda'),
-    
+    path('contact/', contact, name='contact'),
+   
 
     path('post/create', PostCreate.as_view(), name='post_create'),
     path('post/update/<pk>', PostUpdate.as_view(), name='post_update'),

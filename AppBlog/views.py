@@ -29,6 +29,9 @@ def usuario(request):
 def about(request):
     return render (request, 'appBlog/about.html')
 
+def contact(request):
+    return render (request, 'appBlog/contact.html')
+
 def nuevoPostForm(request):
     if request.method == 'POST':
         miFormulario = NuevoPostForm(request.POST)
