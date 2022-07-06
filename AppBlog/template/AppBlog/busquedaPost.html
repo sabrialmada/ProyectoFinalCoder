@@ -1,0 +1,17 @@
+{% extends "appBlog/padre.html" %}
+{% load static %}
+
+{% block section_name %}
+<h1 class="fw-bolder">Publica Tu Reseña!</h1>
+{% endblock %}
+
+{% block contenidoQueCambia %}
+<form action="{% url 'nuevoPostForm' %}" method="GET"> 
+    <input type="number" name="post" placeholder="POST" id="titulo">
+    <input type="submit" value="Buscar Post">
+</form>
+{% endblock %}
+
+{% block contenidoQueNo %}
+
+{% endblock %}

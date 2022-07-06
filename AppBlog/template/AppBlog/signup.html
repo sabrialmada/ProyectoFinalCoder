@@ -1,0 +1,20 @@
+{% extends "appBlog/padre.html" %}
+{% load static %}
+
+
+{% block section_name %}
+<h1 class="fw-bolder">Registrar Usuario</h1>
+{% endblock %}
+
+
+{% block contenidoQueCambia %}
+<form method="POST"> {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Registrar</button>
+</form>
+{% endblock %}
+
+
+{% block contenidoQueNo %}
+{% endblock %}
+

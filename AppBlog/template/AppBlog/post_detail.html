@@ -1,0 +1,25 @@
+{% extends "appBlog/padre.html" %}
+{% load static %}
+
+
+{% block section_name %}
+<h1 class="fw-bolder">Publica Tu Reseña!</h1>
+{% endblock %}
+
+
+{% block contenidoQueCambia %}
+<h3>Eliminar Reseña</h3>
+<p>Titulo: {{post.titulo}}</p>
+<p>Subtitulo: {{post.subtitulo}}</p>
+<p>Autor: {{post.autor}}</p>
+<p>Fecha: {{post.fecha}}</p>
+<p>Reseña: {{post.resenia}}</p>
+
+<p>
+    <a href="{% url 'Inicio' %}">Volver a la lista de reseñas</a>
+</p>
+{% endblock %}
+
+
+{% block contenidoQueNo %}
+{% endblock %}

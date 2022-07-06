@@ -1,0 +1,25 @@
+{% extends "appBlog/padre.html" %}
+{% load static %}
+
+{% block section_name %}
+<h1 class="fw-bolder">Publica Tu Reseña!</h1>
+{% endblock %}
+
+{% block contenidoQueCambia %}
+<h1> Posts relacionados a su busqueda {{titulo}}</h1>
+{% if post %}
+<ul>
+    {% for post in post %}
+    <li>{{post.titulo}}</li>
+    <li>{{post.subtitulo}}</li>
+    <li>{{post.autor}}</li>
+    <li>{{post.fecha}}</li>
+    <li>{{post.resenia}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
+
+{% block contenidoQueNo %}
+
+{% endblock %}

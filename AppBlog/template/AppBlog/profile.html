@@ -1,0 +1,19 @@
+{% extends "appBlog/padre.html" %}
+{% load static %}
+
+{% block section_name %}
+<h1 class="fw-bolder">Bienvenido A Su Perfil</h1>
+{% endblock %}
+
+{% block contenidoQueCambia %}
+{{mensaje}}
+<br>
+
+<button>
+    <a href="{% url 'logout' %}">Detalles</a>
+</button>
+{% endblock %}
+
+{% block contenidoQueNo %}
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "appBlog/padre.html" %}
+{% load static %}
+
+
+{% block section_name %}
+<h1 class="fw-bolder">Publica Tu Reseña!</h1>
+{% endblock %}
+
+
+{% block contenidoQueCambia %}
+<h3>Eliminar Reseña</h3>
+<form method="POST"> {% csrf_token %}
+    <p>Desea eliminar la reseña?</p>
+    {{object}}
+        <input type="submit" value="si"/>
+</form>
+{% endblock %}
+
+
+{% block contenidoQueNo %}
+{% endblock %}

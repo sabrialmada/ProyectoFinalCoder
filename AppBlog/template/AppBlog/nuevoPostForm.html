@@ -1,0 +1,20 @@
+{% extends "appBlog/padre.html" %}
+{% load static %}
+
+{% block section_name %}
+<h1 class="fw-bolder">Publica Tu Reseña!</h1>
+{% endblock %}
+
+{% block contenidoQueCambia %}
+<form action="{% url 'nuevoPostForm' %}" method="POST"> {% csrf_token %}
+    <table>
+        {{miFormulario.as_table}}
+    </table>
+    <br>
+    <input type="submit" value="Enviar Reseña">
+</form>
+{% endblock %}
+
+{% block contenidoQueNo %}
+
+{% endblock %}
