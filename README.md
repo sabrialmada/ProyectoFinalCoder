@@ -7,4 +7,4 @@ Instrucciones:
 3- Acceder a la ruta del proyecto y en la terminal usar: python manage.py runserver para iniciar el servidor. 
 4- La pagina no esta completa.
 
-Nota: para que los formularios funcionen correctamente los campos de fechas debes llenarlos en formato mes/dia/año o año-mes-dia (siempre usando numeros).
+Nota: el formulario todavia no funciona porque no terminé de configurar para cargar una imagen.
